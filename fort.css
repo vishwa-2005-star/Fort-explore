@@ -1,0 +1,231 @@
+/* ===== General Layout ===== */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0faff; /* Light blue-grey */
+    line-height: 1.6;
+}
+
+/* ===== Header Styling ===== */
+header {
+    background-color: #2c3e50; /* Dark blue-grey */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #5a4be7; /* Deep lavender-blue */
+    border-bottom: 2px solid #a0a0a0; /* Solid light grey line */
+    padding-bottom: 8px;
+}
+
+h2 {
+    color: #2196f3; /* Bright blue */
+    margin: 30px 0 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #81D4FA; /* Light blue underline */
+    padding-bottom: 5px;
+}
+
+/* ===== Navigation Bar ===== */
+nav.navbar {
+    background-color: #fcf05f; /* Yellowish */
+    border-bottom: 3px solid #4cd3a7; /* Aqua green */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+nav a.navbar-brand {
+    color: #222 !important;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+nav a.nav-link {
+    color: #222 !important;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a.nav-link:hover {
+    color: #007bff !important; /* Standard blue on hover */
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    border-color: rgba(0,0,0,0.1) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Dropdown specific styles */
+.dropdown-menu {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd; /* Solid border */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    padding: 8px 0;
+}
+
+.dropdown-item {
+    color: #333 !important;
+    padding: 8px 16px;
+    font-weight: normal;
+}
+
+.dropdown-item:hover {
+    background-color: #e9ecef; /* Light grey on hover */
+    color: #333 !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* ===== Sections & Highlights ===== */
+.section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+    border: 1px solid #e0e0e0; /* Solid light grey border */
+}
+
+.section p {
+    font-size: 1em;
+    color: #333;
+}
+
+.quote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #42a5f5; /* Light blue border */
+    padding-left: 12px;
+    margin-top: 15px;
+}
+
+/* ===== Buttons ===== */
+.btn-outline-success {
+    border: 2px solid #28a745;
+    color: #28a745;
+    background-color: transparent;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-outline-success:hover {
+    background-color: #28a745;
+    color: white;
+    box-shadow: 0 2px 6px rgba(40,167,69,0.3);
+}
+
+/* Images in sections */
+.section img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1px solid #ddd;
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+
+form {
+    background: #ffffff;
+    border: 2px solid #004d99;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+form p {
+    margin: 10px 0;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background-color: #004d99;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 10px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #003366;
+}
+
+/* List styles */
+.section ul, .section ol {
+    margin-left: 20px;
+    padding: 0;
+}
+
+.section li {
+    margin-bottom: 8px;
+    color: #444;
+    font-size: 1em;
+}
+
+/* Fort grid specific styles (from fort.html) */
+.fort-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.fort {
+    border: 1px solid #ccc;
+    padding: 8px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.fort img {
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    border: 1px solid #aaa;
+    margin-bottom: 8px;
+}
+
+.fort-content h2 {
+    font-size: 18px;
+    margin: 6px 0;
+    color: #222;
+}
+
+.fort-content p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.4;
+}
